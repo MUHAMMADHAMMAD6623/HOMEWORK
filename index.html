@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=100%.0">
+    <meta name="desciption" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Web Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            background-image: linear-gradient(rgb(84, 14, 176), rgb(55, 20, 121), rgb(32, 8, 70), rgb(23, 5, 47), rgb(13, 2, 26));
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 867px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        nav.navbar {
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .navbar .left {
+            font-size: 1.8rem;
+            color: rgb(100, 105, 172);
+            margin-top: 15px;
+        }
+
+        .navbar .right ul {
+            display: flex;
+        }
+
+        .navbar .right ul li {
+            list-style: none;
+            margin: 27px 25px;
+        }
+
+        .navbar .right ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar .right ul li a:hover {
+            color: rgb(100, 105, 172);
+        }
+
+        .main {
+            margin-top: 240px;
+            text-align: center;
+            line-height: 35px;
+        }
+
+        .main p {
+            color: white;
+        }
+
+        .main .btn {
+            padding: 7px;
+            font-size: 1.2rem;
+            background-color: yellow;
+            border: 4px solid black;
+            border-radius: 10px;
+            margin-top: 17px;
+            cursor: pointer;
+        }
+
+        .fe {
+            text-align: center;
+            margin-top: 480px;
+        }
+
+        .be {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .fs {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .ms {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .requirements {
+            margin-top: 80px;
+        }
+
+        .requirements h2 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .requirements .lang {
+            float: left;
+            margin-left: 193px;
+        }
+
+        .heading {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        hr {
+            margin-top: 90px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        form .sfrm input {
+            width: 300px;
+            height: 35px;
+            font-size: 1.1rem;
+            padding-left: 10px;
+            border: 2px solid black;
+            border-radius: 7px;
+            display: block;
+            margin: 13px auto;
+        }
+
+        form .mfrm label {
+            font-size: 1.2rem;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            color: white;
+            margin-top: 50px;
+            height: 60px;
+        }
+
+        #mega {
+            background-color: #1b1551;
+            height: 220px;
+            width: 450px;
+            position: absolute;
+            top: 76px;
+            left: 450px;
+            display: none;
+            color: white;
+        }
+
+        #meg {
+            background-color: #1b1551;
+            height: 220px;
+            width: 450px;
+            position: absolute;
+            top: 76px;
+            left: 540px;
+            display: none;
+            color: white;
+        }
+
+        #me {
+            background-color: #1b1551;
+            height: 220px;
+            width: 450px;
+            position: absolute;
+            top: 76px;
+            left: 630px;
+            display: none;
+            color: white;
+        }
+
+        #m {
+            background-color: #1b1551;
+            height: 220px;
+            width: 450px;
+            position: absolute;
+            top: 76px;
+            left: 730px;
+            display: none;
+            color: white;
+        }
+
+        #agem {
+            background-color: #1b1551;
+            height: 220px;
+            width: 450px;
+            position: absolute;
+            top: 76px;
+            left: 820px;
+            display: none;
+            color: white;
+        }
+
+        .navbar .right ul li:hover .mega a {
+            font-size: 1.2rem;
+            margin: 40px;
+        }
+
+        .navbar .right ul li#fone:hover #mega {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar .right ul li#sone:hover #meg {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar .right ul li#tone:hover #me {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar .right ul li#foune:hover #m {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar .right ul li#soune:hover #agem {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left">
+                Web Development
+            </div>
+            <div class="right">
+                <ul>
+                    <li id="fone"><a href="home.html">Home</a>
+                        <div class="mega" id="mega">
+                            <a href="#">Html &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Css
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Js
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;php</a>
+                        </div>
+                    </li>
+                    <li id="sone"><a href="about.html">About</a>
+                        <div class="mega" id="meg">
+                            <a href="#">Mongo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Express &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;React
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Node</a>
+                        </div>
+                    </li>
+                    <li id="tone"><a href="blog.html">Blog</a>
+                        <div class="mega" id="me">
+                            <a href="#">C++ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C#
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java</a>
+                        </div>
+                    </li>
+                    <li id="foune"><a href="contact.html">Contact us</a>
+                        <div class="mega" id="m">
+                            <a href="#">Python &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Xml &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sql
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.Net</a>
+                        </div>
+                    </li>
+                    <li id="soune"><a href="portfolio.html">Portfolio</a>
+                        <div class="mega" id="agem">
+                            <a href="#">Ds &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ml
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ai
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dl</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+        <h1>Hello!</h1>
+        <p>Web Development is very highly demanded job in the job market And there are further more fields in it.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, consequatur esse harum dolorem non,
+            itaque repellat, quis amet dignissimos nulla nostrum facere odit!</p>
+        <input type="text"
+            style=" background-color:rgb(216, 216, 216);width:380px;height:45px;border: 3px solid black; border-radius: 10px; font-size: 1.1rem; padding-left: 10px;"
+            placeholder="Search about Web Development">
+        <button class="btn"><a href="#" style="text-decoration: none;">Apply</a></button>
+    </div>
+    <div class="fe">
+        <img
+            src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbXB1dGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60">
+        <h2>Front-End Developing</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate temporibus necessitatibus culpa rem
+            libero alias recusandae consequuntur repudiandae sit nesciunt, similique ullam placeat dolorum, repellat
+            ducimus magnam doloremque saepe! Accusantium maxime magnam illo voluptatum ea. Vero amet, a eveniet
+            consectetur, beatae natus ab expedita modi molestiae quibusdam nemo eum incidunt? Autem ex maxime, eos et
+            quod quos doloremque? Voluptas, nesciunt. Fuga, quos ea? Esse numquam, quasi itaque ipsam voluptatem
+            nesciunt possimus tempore cum maiores debitis excepturi! Quibusdam eos voluptatem magni!</p>
+    </div>
+    <div class="be">
+        <img
+            src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60">
+        <h2>Backend Developing</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate temporibus necessitatibus culpa rem
+            libero alias recusandae consequuntur repudiandae sit nesciunt, similique ullam placeat dolorum, repellat
+            ducimus magnam doloremque saepe! Accusantium maxime magnam illo voluptatum ea. Vero amet, a eveniet
+            consectetur, beatae natus ab expedita modi molestiae quibusdam nemo eum incidunt? Autem ex maxime, eos et
+            quod quos doloremque? Voluptas, nesciunt. Fuga, quos ea? Esse numquam, quasi itaque ipsam voluptatem
+            nesciunt possimus tempore cum maiores debitis excepturi! Quibusdam eos voluptatem magni!</p>
+    </div>
+    <div class="fs">
+        <img
+            src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60">
+        <h2>Full-Stack Developing</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate temporibus necessitatibus culpa rem
+            libero alias recusandae consequuntur repudiandae sit nesciunt, similique ullam placeat dolorum, repellat
+            ducimus magnam doloremque saepe! Accusantium maxime magnam illo voluptatum ea. Vero amet, a eveniet
+            consectetur, beatae natus ab expedita modi molestiae quibusdam nemo eum incidunt? Autem ex maxime, eos et
+            quod quos doloremque? Voluptas, nesciunt. Fuga, quos ea? Esse numquam, quasi itaque ipsam voluptatem
+            nesciunt possimus tempore cum maiores debitis excepturi! Quibusdam eos voluptatem magni!</p>
+    </div>
+    <div class="ms">
+        <img
+            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60">
+        <h2>Mern-Stack Developing</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate temporibus necessitatibus culpa rem
+            libero alias recusandae consequuntur repudiandae sit nesciunt, similique ullam placeat dolorum, repellat
+            ducimus magnam doloremque saepe! Accusantium maxime magnam illo voluptatum ea. Vero amet, a eveniet
+            consectetur, beatae natus ab expedita modi molestiae quibusdam nemo eum incidunt? Autem ex maxime, eos et
+            quod quos doloremque? Voluptas, nesciunt. Fuga, quos ea? Esse numquam, quasi itaque ipsam voluptatem
+            nesciunt possimus tempore cum maiores debitis excepturi! Quibusdam eos voluptatem magni!</p>
+    </div>
+    <div class="requirements">
+        <h2>Requirements to get hired</h2>
+        <div class="lang" id="html">
+            <h3>Html</h3>
+            <p>85%</p>
+        </div>
+        <div class="lang" id="css">
+            <h3>Css</h3>
+            <p>70%</p>
+        </div>
+        <div class="lang" id="js">
+            <h3>js</h3>
+            <p>80%</p>
+        </div>
+        <div class="lang" id="anybackendlang">
+            <h3>Any backend lang</h3>
+            <p>80%</p>
+        </div>
+    </div>
+    <hr>
+    <h2 class="heading">Get Hired</h2>
+    <form action="main.cpp">
+        <div class="sfrm">
+            <input type="text" placeholder="Enter your name here">
+            <input type="Age" placeholder="Enter your age here">
+            <input type="email" placeholder="Enter you e-mail address here">
+            <input type="password" placeholder="Enter your password here">
+        </div>
+        <div class="mfrm">
+            <label for="fr">
+                Front-End: <input type="radio" id="fr" name="career">
+            </label>
+            <label for="br">
+                Backend: <input type="radio" id="br" name="career">
+            </label>
+            <label for="fs">
+                Full Stack: <input type="radio" id="fs" name="career">
+            </label>
+        </div>
+    </form>
+    <footer>
+        <p>Copyright Muhammad Hammad 2023 ltd.</p>
+    </footer>
+</body>
+
+</html>
